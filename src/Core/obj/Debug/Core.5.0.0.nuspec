@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Core</id>
+    <version>5.0.0</version>
+    <authors>github.com/nandel</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net5.0">
+        <dependency id="Microsoft.Extensions.Logging.Abstractions" version="5.0.0" exclude="Build,Analyzers" />
+        <dependency id="Nandel.Modules" version="5.0.0" exclude="Build,Analyzers" />
+        <dependency id="Nandel.SuperVerbosity" version="1.0.3" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="12.0.2" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\fefso\RiderProjects\Nandel.DiscordStikyNotes\src\Core\bin\Debug\net5.0\Core.dll" target="lib\net5.0\Core.dll" />
+  </files>
+</package>

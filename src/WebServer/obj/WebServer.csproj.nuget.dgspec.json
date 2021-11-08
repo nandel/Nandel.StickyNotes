@@ -1,0 +1,411 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\fefso\\RiderProjects\\Nandel.DiscordStikyNotes\\src\\WebServer\\WebServer.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\fefso\\RiderProjects\\Nandel.DiscordStikyNotes\\src\\Application\\Application.csproj": {
+      "version": "5.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\fefso\\RiderProjects\\Nandel.DiscordStikyNotes\\src\\Application\\Application.csproj",
+        "projectName": "Application",
+        "projectPath": "C:\\Users\\fefso\\RiderProjects\\Nandel.DiscordStikyNotes\\src\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\fefso\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fefso\\RiderProjects\\Nandel.DiscordStikyNotes\\src\\Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\fefso\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\fefso\\RiderProjects\\Nandel.DiscordStikyNotes\\src\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\fefso\\RiderProjects\\Nandel.DiscordStikyNotes\\src\\Core\\Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\fefso\\RiderProjects\\Nandel.DiscordStikyNotes\\src\\Core\\Core.csproj": {
+      "version": "5.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\fefso\\RiderProjects\\Nandel.DiscordStikyNotes\\src\\Core\\Core.csproj",
+        "projectName": "Core",
+        "projectPath": "C:\\Users\\fefso\\RiderProjects\\Nandel.DiscordStikyNotes\\src\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\fefso\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fefso\\RiderProjects\\Nandel.DiscordStikyNotes\\src\\Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\fefso\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Nandel.Modules": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Nandel.SuperVerbosity": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\fefso\\RiderProjects\\Nandel.DiscordStikyNotes\\src\\Providers.Discord\\Providers.Discord.csproj": {
+      "version": "5.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\fefso\\RiderProjects\\Nandel.DiscordStikyNotes\\src\\Providers.Discord\\Providers.Discord.csproj",
+        "projectName": "Providers.Discord",
+        "projectPath": "C:\\Users\\fefso\\RiderProjects\\Nandel.DiscordStikyNotes\\src\\Providers.Discord\\Providers.Discord.csproj",
+        "packagesPath": "C:\\Users\\fefso\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fefso\\RiderProjects\\Nandel.DiscordStikyNotes\\src\\Providers.Discord\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\fefso\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\fefso\\RiderProjects\\Nandel.DiscordStikyNotes\\src\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\fefso\\RiderProjects\\Nandel.DiscordStikyNotes\\src\\Application\\Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Discord.Net": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\fefso\\RiderProjects\\Nandel.DiscordStikyNotes\\src\\Providers.EntityFramework\\Providers.EntityFramework.csproj": {
+      "version": "5.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\fefso\\RiderProjects\\Nandel.DiscordStikyNotes\\src\\Providers.EntityFramework\\Providers.EntityFramework.csproj",
+        "projectName": "Providers.EntityFramework",
+        "projectPath": "C:\\Users\\fefso\\RiderProjects\\Nandel.DiscordStikyNotes\\src\\Providers.EntityFramework\\Providers.EntityFramework.csproj",
+        "packagesPath": "C:\\Users\\fefso\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fefso\\RiderProjects\\Nandel.DiscordStikyNotes\\src\\Providers.EntityFramework\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\fefso\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\fefso\\RiderProjects\\Nandel.DiscordStikyNotes\\src\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\fefso\\RiderProjects\\Nandel.DiscordStikyNotes\\src\\Core\\Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\fefso\\RiderProjects\\Nandel.DiscordStikyNotes\\src\\Providers.Sqlite\\Providers.Sqlite.csproj": {
+      "version": "5.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\fefso\\RiderProjects\\Nandel.DiscordStikyNotes\\src\\Providers.Sqlite\\Providers.Sqlite.csproj",
+        "projectName": "Providers.Sqlite",
+        "projectPath": "C:\\Users\\fefso\\RiderProjects\\Nandel.DiscordStikyNotes\\src\\Providers.Sqlite\\Providers.Sqlite.csproj",
+        "packagesPath": "C:\\Users\\fefso\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fefso\\RiderProjects\\Nandel.DiscordStikyNotes\\src\\Providers.Sqlite\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\fefso\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\fefso\\RiderProjects\\Nandel.DiscordStikyNotes\\src\\Providers.EntityFramework\\Providers.EntityFramework.csproj": {
+                "projectPath": "C:\\Users\\fefso\\RiderProjects\\Nandel.DiscordStikyNotes\\src\\Providers.EntityFramework\\Providers.EntityFramework.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\fefso\\RiderProjects\\Nandel.DiscordStikyNotes\\src\\WebServer\\WebServer.csproj": {
+      "version": "5.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\fefso\\RiderProjects\\Nandel.DiscordStikyNotes\\src\\WebServer\\WebServer.csproj",
+        "projectName": "WebServer",
+        "projectPath": "C:\\Users\\fefso\\RiderProjects\\Nandel.DiscordStikyNotes\\src\\WebServer\\WebServer.csproj",
+        "packagesPath": "C:\\Users\\fefso\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fefso\\RiderProjects\\Nandel.DiscordStikyNotes\\src\\WebServer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\fefso\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\fefso\\RiderProjects\\Nandel.DiscordStikyNotes\\src\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\fefso\\RiderProjects\\Nandel.DiscordStikyNotes\\src\\Application\\Application.csproj"
+              },
+              "C:\\Users\\fefso\\RiderProjects\\Nandel.DiscordStikyNotes\\src\\Providers.Discord\\Providers.Discord.csproj": {
+                "projectPath": "C:\\Users\\fefso\\RiderProjects\\Nandel.DiscordStikyNotes\\src\\Providers.Discord\\Providers.Discord.csproj"
+              },
+              "C:\\Users\\fefso\\RiderProjects\\Nandel.DiscordStikyNotes\\src\\Providers.Sqlite\\Providers.Sqlite.csproj": {
+                "projectPath": "C:\\Users\\fefso\\RiderProjects\\Nandel.DiscordStikyNotes\\src\\Providers.Sqlite\\Providers.Sqlite.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Discord.Net": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Nandel.Modules.AspNetCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

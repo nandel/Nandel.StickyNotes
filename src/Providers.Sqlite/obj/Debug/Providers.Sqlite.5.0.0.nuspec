@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Providers.Sqlite</id>
+    <version>5.0.0</version>
+    <authors>github.com/nandel</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net5.0">
+        <dependency id="Providers.EntityFramework" version="5.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.Sqlite" version="5.0.11" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\fefso\RiderProjects\Nandel.DiscordStikyNotes\src\Providers.Sqlite\bin\Debug\net5.0\Providers.Sqlite.dll" target="lib\net5.0\Providers.Sqlite.dll" />
+  </files>
+</package>
