@@ -16,4 +16,4 @@ Essas requisições trata-se de chamar uma página web e transformar seu conteú
 - _key_: Chave a ser utilizada na leitura
 - _addresss_: Endereço web a ser utilizado
 
-> Essa operação também pode ser utilizada para ler um campo especifico do JSON retornado, adicionando o parâmetro `-f` e informando o nome do campo, ex: `!put http-get open-issues "https://api.github.com/repos/nandel/Nandel.DiscordStickyNotes -f open_issues"`
+> Essa operação também pode ser utilizada para ler um campo especifico do JSON retornado, adicionando o parâmetro `-f` e informando o nome do campo, ex: `!put http-get open-issues "https://api.github.com/repos/nandel/Nandel.StickyNotes -f open_issues"`

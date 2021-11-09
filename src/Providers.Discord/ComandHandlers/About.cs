@@ -14,7 +14,7 @@ namespace Nandel.StikyNotes.Providers.Discord.ComandHandlers
         [Command("github")]
         public async Task GithubAsync()
         {
-            await ReplyAsync("https://github.com/nandel/Nandel.DiscordStickyNotes");
+            await ReplyAsync("https://github.com/nandel/Nandel.StickyNotes");
         }
     }
 }
