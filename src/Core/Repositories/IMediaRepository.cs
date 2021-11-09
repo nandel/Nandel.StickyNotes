@@ -6,6 +6,7 @@ namespace Core.Repositories
 {
     public interface IMediaRepository
     {
+        Task<bool> ExistsAsync(string key);
         Task<Media> GetAsync(string key);
         Task<IEnumerable<Media>> GetAllAsync();
         Task AddAsync(Media instance);

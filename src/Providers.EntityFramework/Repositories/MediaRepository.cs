@@ -16,7 +16,12 @@ namespace Provider.EntityFramework.Repositories
         }
 
         private DbSet<Media> Collection => _db.Set<Media>();
-        
+
+        public async Task<bool> ExistsAsync(string key)
+        {
+            return await Collection.AnyAsync(x => x.Key == key);
+        }
+
         public async Task<Media> GetAsync(string key)
         {
             return await Collection.FindAsync(key);
