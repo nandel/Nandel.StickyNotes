@@ -7,12 +7,12 @@ using Microsoft.Extensions.Logging;
 
 namespace Application.Discord.Modules
 {
-    public class GetMedia : ModuleBase<SocketCommandContext>
+    public class Get : ModuleBase<SocketCommandContext>
     {
         private readonly ISender _sender;
-        private readonly ILogger<GetMedia> _logger;
+        private readonly ILogger<Get> _logger;
 
-        public GetMedia(ISender sender, ILogger<GetMedia> logger)
+        public Get(ISender sender, ILogger<Get> logger)
         {
             _sender = sender;
             _logger = logger;
@@ -21,7 +21,7 @@ namespace Application.Discord.Modules
         [Command("get")]
         public async Task ReadAsync(string name)
         {
-            _logger.LogTrace("get {Name}", name);
+            _logger.LogTrace("!get {Name}", name);
 
             try
             {

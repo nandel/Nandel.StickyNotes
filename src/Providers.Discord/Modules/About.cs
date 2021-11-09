@@ -5,6 +5,12 @@ namespace Application.Discord.Modules
 {
     public class About : ModuleBase<SocketCommandContext>
     {
+        [Command("about")]
+        public async Task AboutAsync()
+        {
+            await ReplyAsync("Um projeto open source criado por Fernando Souza (https://github.com/nandel)");
+        }
+        
         [Command("github")]
         public async Task GithubAsync()
         {

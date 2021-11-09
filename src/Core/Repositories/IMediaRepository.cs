@@ -10,5 +10,6 @@ namespace Core.Repositories
         Task<Media> GetAsync(string key);
         Task<IEnumerable<Media>> GetAllAsync();
         Task AddAsync(Media instance);
+        Task RemoveAsync(string key);
     }
 }

@@ -39,5 +39,17 @@ namespace Provider.EntityFramework.Repositories
             // TODO: Mover o salvar do dbcontext para o conceito de uow
             await _db.SaveChangesAsync();
         }
+
+        public async Task RemoveAsync(string key)
+        {
+            var instance = await GetAsync(key);
+            if (instance is not null)
+            {
+                Collection.Remove(instance);
+                
+                // TODO: Mover o salvar do dbcontext para o conceito de uow
+                await _db.SaveChangesAsync();
+            }
+        }
     }
 }

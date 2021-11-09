@@ -9,12 +9,12 @@ using Microsoft.Extensions.Logging;
 
 namespace Application.Discord.Modules
 {
-    public class PutMedia : ModuleBase<SocketCommandContext>
+    public class Put : ModuleBase<SocketCommandContext>
     {
         private readonly ISender _sender;
-        private readonly ILogger<PutMedia> _logger;
+        private readonly ILogger<Put> _logger;
 
-        public PutMedia(ISender sender, ILogger<PutMedia> logger)
+        public Put(ISender sender, ILogger<Put> logger)
         {
             _sender = sender;
             _logger = logger;
@@ -24,7 +24,7 @@ namespace Application.Discord.Modules
         [Summary("`!put text key-name \"Text Value\"")]
         public async Task PutAsync(string type, string key, string tail)
         {
-            _logger.LogTrace("put {Type} {Key} {Tail}", type, key, tail);
+            _logger.LogTrace("!put {Type} {Key} {Tail}", type, key, tail);
             
             try
             {

@@ -8,28 +8,30 @@ using Microsoft.Extensions.Logging;
 
 namespace Application.Discord.Modules
 {
-    public class GetAllMedia : ModuleBase<SocketCommandContext>
+    public class List : ModuleBase<SocketCommandContext>
     {
         private readonly ISender _sender;
-        private readonly ILogger<GetAllMedia> _logger;
+        private readonly ILogger<List> _logger;
 
-        public GetAllMedia(ISender sender, ILogger<GetAllMedia> logger)
+        public List(ISender sender, ILogger<List> logger)
         {
             _sender = sender;
             _logger = logger;
         }
 
-        [Command("list-keys")]
+        [Command("list")]
         public async Task ListKeysAsync()
         {
+            _logger.LogTrace("!list");
+            
             var qry = new GetAllKeysQuery();
             var keys = await _sender.Send(qry);
             
-            var response = new StringBuilder("Abaixo segue a lista de operações. Para utilizar qualquer uma basta chamar `!get {chave}` ou `!{chave}` ");
+            var response = new StringBuilder();
             foreach (var key in keys)
             {
                 response.Append(Environment.NewLine);
-                response.Append(key);
+                response.Append($"!{key}");
             }
 
             await ReplyAsync(response.ToString());
