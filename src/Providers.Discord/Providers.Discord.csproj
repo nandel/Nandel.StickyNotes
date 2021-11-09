@@ -13,4 +13,10 @@
       <PackageReference Include="Discord.Net" Version="2.4.0" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Update="Resources\options.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
 </Project>
