@@ -6,7 +6,7 @@ using Microsoft.Extensions.Hosting;
 using Nandel.Modules;
 using Nandel.Modules.AspNetCore;
 
-namespace WebServer
+namespace Nandel.StikyNotes
 {
     public class Startup
     {

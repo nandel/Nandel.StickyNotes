@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Core.Specifications;
+using Nandel.StikyNotes.Core.Specifications;
 
-namespace Core.Services
+namespace Nandel.StikyNotes.Core.Services
 {
     public class Validator<T> : IValidator<T>
     {

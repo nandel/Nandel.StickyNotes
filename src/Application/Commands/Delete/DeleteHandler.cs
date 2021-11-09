@@ -1,10 +1,10 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
-using Core.Repositories;
 using MediatR;
 using Microsoft.Extensions.Logging;
+using Nandel.StikyNotes.Core.Repositories;
 
-namespace Application.Commands.Delete
+namespace Nandel.StikyNotes.Application.Commands.Delete
 {
     public class DeleteHandler : IRequestHandler<DeleteCommand>
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using MediatR;
 
-namespace Application.Commands.SetHttpGet
+namespace Nandel.StikyNotes.Application.Commands.SetHttpGet
 {
     public class SetHttpGetCommand : IRequest
     {

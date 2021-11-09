@@ -1,17 +1,14 @@
-﻿using System;
-using System.Threading;
+﻿using System.Threading;
 using System.Threading.Tasks;
-using Application;
-using Application.Discord;
-using Application.Discord.Services;
 using Discord;
 using Discord.Commands;
 using Discord.WebSocket;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Nandel.StikyNotes.Providers.Discord.Services;
 
-namespace WebServer.Services
+namespace Nandel.StikyNotes.Services
 {
     public class DiscordBot : IHostedService
     {

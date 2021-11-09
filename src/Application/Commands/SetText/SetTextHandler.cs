@@ -1,13 +1,12 @@
-﻿using System;
-using System.Threading;
+﻿using System.Threading;
 using System.Threading.Tasks;
-using Core.Entities;
-using Core.Repositories;
-using Core.Services;
 using MediatR;
 using Microsoft.Extensions.Logging;
+using Nandel.StikyNotes.Core.Entities;
+using Nandel.StikyNotes.Core.Repositories;
+using Nandel.StikyNotes.Core.Services;
 
-namespace Application.Commands.SetText
+namespace Nandel.StikyNotes.Application.Commands.SetText
 {
     public class SetTextHandler : IRequestHandler<SetTextCommand>
     {

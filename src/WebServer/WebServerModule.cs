@@ -1,10 +1,10 @@
-﻿using Application.Discord;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using Nandel.Modules;
-using Providers.EntityFramework.Sqlite;
-using WebServer.Services;
+using Nandel.StikyNotes.Providers.Discord;
+using Nandel.StikyNotes.Providers.Sqlite;
+using Nandel.StikyNotes.Services;
 
-namespace WebServer
+namespace Nandel.StikyNotes
 {
     [DependsOn(
         typeof(DiscordProviderModule),

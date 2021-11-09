@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace Application.Commands.SetText
+namespace Nandel.StikyNotes.Application.Commands.SetText
 {
     public record SetTextCommand : IRequest
     {

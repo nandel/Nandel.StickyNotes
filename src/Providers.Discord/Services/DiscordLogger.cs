@@ -2,7 +2,7 @@
 using Discord;
 using Microsoft.Extensions.Logging;
 
-namespace Application.Discord.Services
+namespace Nandel.StikyNotes.Providers.Discord.Services
 {
     public class DiscordLogger : IDiscordLogger
     {

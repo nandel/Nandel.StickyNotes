@@ -1,11 +1,12 @@
 ﻿using System;
-using Application.Discord.Services;
 using Discord.Commands;
 using Discord.WebSocket;
 using Microsoft.Extensions.DependencyInjection;
 using Nandel.Modules;
+using Nandel.StikyNotes.Application;
+using Nandel.StikyNotes.Providers.Discord.Services;
 
-namespace Application.Discord
+namespace Nandel.StikyNotes.Providers.Discord
 {
     [DependsOn(
         typeof(ApplicationModule)

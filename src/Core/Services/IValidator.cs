@@ -1,7 +1,6 @@
 ﻿using System.Threading.Tasks;
-using Core.Entities;
 
-namespace Core.Services
+namespace Nandel.StikyNotes.Core.Services
 {
     public interface IValidator<T>
     {

@@ -1,4 +1,4 @@
-﻿namespace Core.Entities
+﻿namespace Nandel.StikyNotes.Core.Entities
 {
     public interface IMustHaveTenant
     {

@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace Application.Commands.Delete
+namespace Nandel.StikyNotes.Application.Commands.Delete
 {
     public record DeleteCommand : IRequest
     {

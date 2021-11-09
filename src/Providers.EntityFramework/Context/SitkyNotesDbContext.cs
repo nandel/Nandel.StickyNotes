@@ -1,10 +1,9 @@
-﻿using System;
-using Core.Entities;
-using Core.Services;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using Nandel.StikyNotes.Core.Entities;
+using Nandel.StikyNotes.Core.Services;
 
-namespace Provider.EntityFramework
+namespace Nandel.StikyNotes.Provider.EntityFramework.Context
 {
     public class SitkyNotesDbContext : DbContext
     {

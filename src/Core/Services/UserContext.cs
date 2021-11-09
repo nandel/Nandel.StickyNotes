@@ -1,4 +1,4 @@
-﻿namespace Core.Services
+﻿namespace Nandel.StikyNotes.Core.Services
 {
     public class UserContext : IUserContext
     {

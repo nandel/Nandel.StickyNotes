@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace Application.Queries.GetText
+namespace Nandel.StikyNotes.Application.Queries.GetContent
 {
     public record GetContentQuery : IRequest<string>
     {

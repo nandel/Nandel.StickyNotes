@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Application.Queries.GetText;
 using Discord.Commands;
 using MediatR;
 using Microsoft.Extensions.Logging;
+using Nandel.StikyNotes.Application.Queries.GetContent;
 
-namespace Application.Discord.Modules
+namespace Nandel.StikyNotes.Providers.Discord.ComandHandlers
 {
     public class Get : ModuleBase<SocketCommandContext>
     {

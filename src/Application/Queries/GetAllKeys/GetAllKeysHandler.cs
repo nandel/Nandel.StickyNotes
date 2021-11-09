@@ -2,10 +2,10 @@
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using Core.Repositories;
 using MediatR;
+using Nandel.StikyNotes.Core.Repositories;
 
-namespace Application.Queries.GetAllKeys
+namespace Nandel.StikyNotes.Application.Queries.GetAllKeys
 {
     public class GetAllKeysHandler : IRequestHandler<GetAllKeysQuery, IEnumerable<string>>
     {

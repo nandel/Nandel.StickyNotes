@@ -1,8 +1,7 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.Threading.Tasks;
 
-namespace Core.Entities
+namespace Nandel.StikyNotes.Core.Entities
 {
     public abstract class Media : IMustHaveTenant
     {

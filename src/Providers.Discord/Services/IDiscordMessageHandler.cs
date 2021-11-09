@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace Application.Discord.Services
+namespace Nandel.StikyNotes.Providers.Discord.Services
 {
     public interface IDiscordMessageHandler
     {

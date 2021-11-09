@@ -1,9 +1,9 @@
-﻿using Core.Services;
-using Core.Specifications;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using Nandel.Modules;
+using Nandel.StikyNotes.Core.Services;
+using Nandel.StikyNotes.Core.Specifications;
 
-namespace Core
+namespace Nandel.StikyNotes.Core
 {
     public class CoreModule : IModule
     {

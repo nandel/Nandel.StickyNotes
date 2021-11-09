@@ -2,6 +2,8 @@
 
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
+        <AssemblyName>Nandel.StikyNotes.Core</AssemblyName>
+        <RootNamespace>Nandel.StikyNotes.Core</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>

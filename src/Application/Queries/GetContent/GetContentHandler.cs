@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
-using Core.Repositories;
 using MediatR;
+using Nandel.StikyNotes.Core.Repositories;
 
-namespace Application.Queries.GetText
+namespace Nandel.StikyNotes.Application.Queries.GetContent
 {
     public class GetContentHandler : IRequestHandler<GetContentQuery, string>
     {

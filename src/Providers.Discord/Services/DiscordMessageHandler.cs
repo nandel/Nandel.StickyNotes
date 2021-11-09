@@ -1,14 +1,11 @@
 ﻿using System;
-using System.Linq;
 using System.Threading.Tasks;
-using Application.Queries.GetText;
-using Core.Services;
 using Discord.Commands;
 using Discord.WebSocket;
-using MediatR;
 using Microsoft.Extensions.DependencyInjection;
+using Nandel.StikyNotes.Core.Services;
 
-namespace Application.Discord.Services
+namespace Nandel.StikyNotes.Providers.Discord.Services
 {
     public class DiscordMessageHandler : IDiscordMessageHandler
     {

@@ -1,8 +1,8 @@
-﻿using Core.Entities;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Nandel.StikyNotes.Core.Entities;
 
-namespace Provider.EntityFramework.Configurations
+namespace Nandel.StikyNotes.Provider.EntityFramework.Configurations
 {
     public class MediaConfiguration : IEntityTypeConfiguration<Media>
     {

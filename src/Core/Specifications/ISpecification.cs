@@ -1,7 +1,6 @@
 ﻿using System.Threading.Tasks;
-using Core.Entities;
 
-namespace Core.Specifications
+namespace Nandel.StikyNotes.Core.Specifications
 {
     public interface ISpecification<T>
     {

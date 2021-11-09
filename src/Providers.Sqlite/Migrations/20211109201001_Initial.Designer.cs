@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using Nandel.StikyNotes.Providers.Sqlite.Context;
 using Providers.EntityFramework.Sqlite;
 
 namespace Providers.EntityFramework.Sqlite.Migrations

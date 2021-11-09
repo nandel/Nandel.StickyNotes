@@ -1,9 +1,9 @@
-﻿using Core;
-using MediatR;
+﻿using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using Nandel.Modules;
+using Nandel.StikyNotes.Core;
 
-namespace Application
+namespace Nandel.StikyNotes.Application
 {
     [DependsOn(
         typeof(CoreModule)

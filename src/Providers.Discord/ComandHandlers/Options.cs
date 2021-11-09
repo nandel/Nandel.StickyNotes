@@ -3,7 +3,7 @@ using System.IO;
 using System.Threading.Tasks;
 using Discord.Commands;
 
-namespace Application.Discord.Modules
+namespace Nandel.StikyNotes.Providers.Discord.ComandHandlers
 {
     public class Options : ModuleBase<SocketCommandContext>
     {

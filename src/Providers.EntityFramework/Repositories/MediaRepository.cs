@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using Core.Entities;
-using Core.Repositories;
 using Microsoft.EntityFrameworkCore;
+using Nandel.StikyNotes.Core.Entities;
+using Nandel.StikyNotes.Core.Repositories;
+using Nandel.StikyNotes.Provider.EntityFramework.Context;
 
-namespace Provider.EntityFramework.Repositories
+namespace Nandel.StikyNotes.Provider.EntityFramework.Repositories
 {
     public class MediaRepository : IMediaRepository
     {

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace Core.Entities
+namespace Nandel.StikyNotes.Core.Entities
 {
     public class HttpGet : Media
     {

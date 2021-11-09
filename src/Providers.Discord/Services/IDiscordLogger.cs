@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using Discord;
 
-namespace Application.Discord.Services
+namespace Nandel.StikyNotes.Providers.Discord.Services
 {
     public interface IDiscordLogger
     {

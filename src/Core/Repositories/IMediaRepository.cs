@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using Core.Entities;
+using Nandel.StikyNotes.Core.Entities;
 
-namespace Core.Repositories
+namespace Nandel.StikyNotes.Core.Repositories
 {
     public interface IMediaRepository
     {

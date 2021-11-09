@@ -4,9 +4,11 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Nandel.Modules;
-using Provider.EntityFramework;
+using Nandel.StikyNotes.Provider.EntityFramework;
+using Nandel.StikyNotes.Provider.EntityFramework.Context;
+using Nandel.StikyNotes.Providers.Sqlite.Context;
 
-namespace Providers.EntityFramework.Sqlite
+namespace Nandel.StikyNotes.Providers.Sqlite
 {
     [DependsOn(
         typeof(EntityFrameworkModule)

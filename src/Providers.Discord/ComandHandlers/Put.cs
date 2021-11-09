@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Application.Commands.SetHttpGet;
-using Application.Commands.SetText;
-using Core.Entities;
 using Discord.Commands;
 using MediatR;
 using Microsoft.Extensions.Logging;
+using Nandel.StikyNotes.Application.Commands.SetHttpGet;
+using Nandel.StikyNotes.Application.Commands.SetText;
+using Nandel.StikyNotes.Core.Entities;
 
-namespace Application.Discord.Modules
+namespace Nandel.StikyNotes.Providers.Discord.ComandHandlers
 {
     public class Put : ModuleBase<SocketCommandContext>
     {

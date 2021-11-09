@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
-using Core.Entities;
-using Core.Repositories;
+using Nandel.StikyNotes.Core.Entities;
+using Nandel.StikyNotes.Core.Repositories;
 
-namespace Core.Specifications
+namespace Nandel.StikyNotes.Core.Specifications
 {
     public class MediaKeyShouldBeUniqueSpecification<T> : ISpecification<T> where T: Media
     {

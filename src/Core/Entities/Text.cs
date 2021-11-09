@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Threading.Tasks;
 
-namespace Core.Entities
+namespace Nandel.StikyNotes.Core.Entities
 {
     public class Text : Media
     {

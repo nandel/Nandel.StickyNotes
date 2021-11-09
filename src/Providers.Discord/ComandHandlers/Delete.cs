@@ -1,10 +1,10 @@
 ﻿using System.Threading.Tasks;
-using Application.Commands.Delete;
 using Discord.Commands;
 using MediatR;
 using Microsoft.Extensions.Logging;
+using Nandel.StikyNotes.Application.Commands.Delete;
 
-namespace Application.Discord.Modules
+namespace Nandel.StikyNotes.Providers.Discord.ComandHandlers
 {
     public class Delete : ModuleBase<SocketCommandContext>
     {
