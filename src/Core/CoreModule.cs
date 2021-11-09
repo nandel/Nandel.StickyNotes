@@ -12,6 +12,7 @@ namespace Core
             // services
             services
                 .AddTransient(typeof(IValidator<>), typeof(Validator<>))
+                .AddScoped<IUserContext, UserContext>()
                 ;
             
             // specs

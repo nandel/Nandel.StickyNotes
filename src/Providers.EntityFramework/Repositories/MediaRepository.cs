@@ -24,7 +24,7 @@ namespace Provider.EntityFramework.Repositories
 
         public async Task<Media> GetAsync(string key)
         {
-            return await Collection.FindAsync(key);
+            return await Collection.FirstOrDefaultAsync(x => x.Key == key);
         }
 
         public async Task<IEnumerable<Media>> GetAllAsync()

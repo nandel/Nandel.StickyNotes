@@ -8,8 +8,8 @@ using Providers.EntityFramework.Sqlite;
 namespace Providers.EntityFramework.Sqlite.Migrations
 {
     [DbContext(typeof(SqliteStikyNotesDbContext))]
-    [Migration("20211108200023_Sample")]
-    partial class Sample
+    [Migration("20211109201001_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -19,6 +19,9 @@ namespace Providers.EntityFramework.Sqlite.Migrations
 
             modelBuilder.Entity("Core.Entities.Media", b =>
                 {
+                    b.Property<ulong>("TenantId")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("Key")
                         .HasColumnType("TEXT");
 
@@ -26,7 +29,7 @@ namespace Providers.EntityFramework.Sqlite.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.HasKey("Key");
+                    b.HasKey("TenantId", "Key");
 
                     b.ToTable("Media");
 

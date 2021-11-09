@@ -8,7 +8,11 @@ namespace Provider.EntityFramework.Configurations
     {
         public void Configure(EntityTypeBuilder<Media> builder)
         {
-            builder.HasKey(x => x.Key);
+            builder.HasKey(x => new
+            {
+                x.TenantId,
+                x.Key
+            });
 
             builder.HasDiscriminator()
                 .HasValue<HttpGet>(HttpGet.MediaType)

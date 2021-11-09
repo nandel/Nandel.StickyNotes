@@ -2,7 +2,7 @@
 
 namespace Providers.EntityFramework.Sqlite.Migrations
 {
-    public partial class Sample : Migration
+    public partial class Initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -11,6 +11,7 @@ namespace Providers.EntityFramework.Sqlite.Migrations
                 columns: table => new
                 {
                     Key = table.Column<string>(type: "TEXT", nullable: false),
+                    TenantId = table.Column<ulong>(type: "INTEGER", nullable: false),
                     Discriminator = table.Column<string>(type: "TEXT", nullable: false),
                     Address = table.Column<string>(type: "TEXT", nullable: true),
                     FieldToDisplay = table.Column<string>(type: "TEXT", nullable: true),
@@ -18,7 +19,7 @@ namespace Providers.EntityFramework.Sqlite.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Media", x => x.Key);
+                    table.PrimaryKey("PK_Media", x => new { x.TenantId, x.Key });
                 });
         }
 

@@ -17,6 +17,9 @@ namespace Providers.EntityFramework.Sqlite.Migrations
 
             modelBuilder.Entity("Core.Entities.Media", b =>
                 {
+                    b.Property<ulong>("TenantId")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("Key")
                         .HasColumnType("TEXT");
 
@@ -24,7 +27,7 @@ namespace Providers.EntityFramework.Sqlite.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.HasKey("Key");
+                    b.HasKey("TenantId", "Key");
 
                     b.ToTable("Media");
 
