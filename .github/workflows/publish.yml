@@ -22,6 +22,11 @@ jobs:
       run: dotnet test --no-build --verbosity normal
     - name: Publish
       run: dotnet publish src/WebServer/WebServer.csproj -o out/
+    - name: Get version
+      id: get_version
+      uses: greenygh0st/net-proj-release-version@v1
+      with:     
+        PROJ_FILE: src/Directory.Build.props
     - name: Zip
       uses: vimtor/action-zip@v1
       with:
