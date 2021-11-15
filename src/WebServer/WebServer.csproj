@@ -17,6 +17,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\Providers.Cosmos\Providers.Cosmos.csproj" />
       <ProjectReference Include="..\Providers.Discord\Providers.Discord.csproj" />
       <ProjectReference Include="..\Application\Application.csproj" />
       <ProjectReference Include="..\Providers.Sqlite\Providers.Sqlite.csproj" />

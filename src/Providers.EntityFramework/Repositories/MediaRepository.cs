@@ -3,16 +3,19 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Nandel.StikyNotes.Core.Entities;
 using Nandel.StikyNotes.Core.Repositories;
+using Nandel.StikyNotes.Core.Services;
 using Nandel.StikyNotes.Provider.EntityFramework.Context;
 
 namespace Nandel.StikyNotes.Provider.EntityFramework.Repositories
 {
     public class MediaRepository : IMediaRepository
     {
+        private readonly IUserContext _user;
         private readonly SitkyNotesDbContext _db;
 
-        public MediaRepository(SitkyNotesDbContext db)
+        public MediaRepository(IUserContext user, SitkyNotesDbContext db)
         {
+            _user = user;
             _db = db;
         }
 
@@ -20,12 +23,12 @@ namespace Nandel.StikyNotes.Provider.EntityFramework.Repositories
 
         public async Task<bool> ExistsAsync(string key)
         {
-            return await Collection.AnyAsync(x => x.Key == key);
+            return await Collection.FindAsync(_user.TenantId, key) != null;
         }
 
         public async Task<Media> GetAsync(string key)
         {
-            return await Collection.FirstOrDefaultAsync(x => x.Key == key);
+            return await Collection.FindAsync(_user.TenantId, key);
         }
 
         public async Task<IEnumerable<Media>> GetAllAsync()
