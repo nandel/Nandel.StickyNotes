@@ -10,8 +10,7 @@
         <IsPackable>true</IsPackable>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 
-        <Version>0.0.1</Version>
-        <ReleaseVersion>0.0.1</ReleaseVersion>
+        <Version>0.0.2</Version>
     </PropertyGroup>
     
 </Project>
