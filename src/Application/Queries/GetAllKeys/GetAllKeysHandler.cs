@@ -19,7 +19,9 @@ namespace Nandel.StikyNotes.Application.Queries.GetAllKeys
         public async Task<IEnumerable<string>> Handle(GetAllKeysQuery request, CancellationToken cancellationToken)
         {
             var medias = await _mediaRepository.GetAllAsync();
-            var result = medias.Select(x => x.Key).ToArray();
+            var result = medias.Select(x => x.Key)
+                .OrderBy(x => x)
+                .ToArray();
 
             return result;
         }
