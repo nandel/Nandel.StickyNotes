@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Discord.Commands;
@@ -26,12 +27,19 @@ namespace Nandel.StikyNotes.Providers.Discord.ComandHandlers
             
             var qry = new GetAllKeysQuery();
             var keys = await _sender.Send(qry);
+
+            var grouping = keys.GroupBy(x => x.Split("-").First());
             
             var response = new StringBuilder();
-            foreach (var key in keys)
+            foreach (var group in grouping)
             {
-                response.Append(Environment.NewLine);
-                response.Append($"!{key}");
+                response.AppendLine($"**{group.Key}**");
+                response.AppendLine();
+                
+                foreach (var key in group)
+                {
+                    response.AppendLine($"!{key}");
+                }
             }
 
             await ReplyAsync(response.ToString());
