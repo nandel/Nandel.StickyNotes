@@ -33,6 +33,7 @@ namespace Nandel.StikyNotes.Providers.Discord.ComandHandlers
             var response = new StringBuilder();
             foreach (var group in grouping)
             {
+                response.AppendLine();
                 response.AppendLine($"**{group.Key}**");
                 response.AppendLine();
                 
