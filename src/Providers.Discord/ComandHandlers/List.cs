@@ -35,23 +35,50 @@ namespace Nandel.StikyNotes.Providers.Discord.ComandHandlers
             var response = new StringBuilder();
             foreach (var (groupName, groupMedias) in groups)
             {
-                response.AppendLine();
-                response.AppendLine($"**{groupName}**");
-                response.AppendLine();
-                
-                foreach (var media in groupMedias)
-                {
-                    var icon = media switch
-                    {
-                        HttpGet => ":globe_with_meridians:",
-                        _ => ":pencil:"
-                    };
-                    
-                    response.AppendLine($"{icon} !{media.Key}");
-                }
+                AppendGroup(response, groupName, groupMedias);
             }
 
             await ReplyAsync(response.ToString());
+        }
+
+        [Command("list")]
+        public async Task ListKeyAsync(string groupName)
+        {
+            _logger.LogTrace($"!list {groupName}");
+            
+            var qry = new GetAllQuery();
+            var keys = await _sender.Send(qry);
+
+            var groups = GetGroups(keys);
+
+            if (!groups.ContainsKey(groupName))
+            {
+                await ReplyAsync($"Nenhuma media encontrada no grupo {groupName}");
+                
+                return;
+            }
+            
+            var response = new StringBuilder();
+            AppendGroup(response, groupName, groups[groupName]);
+
+            await ReplyAsync(response.ToString());
+        }
+        private void AppendGroup(StringBuilder stringBuilder, string groupName, IEnumerable<Media> group)
+        {
+            stringBuilder.AppendLine();
+            stringBuilder.AppendLine($"**{PretifyName(groupName)}**");
+            stringBuilder.AppendLine();
+            
+            foreach (var media in group)
+            {
+                var icon = media switch
+                {
+                    HttpGet => ":globe_with_meridians:",
+                    _ => ":pencil:"
+                };
+                    
+                stringBuilder.AppendLine($"{icon} !{media.Key}");
+            }
         }
 
         protected string GetGroupSpliter(IEnumerable<Media> collection)
@@ -68,8 +95,8 @@ namespace Nandel.StikyNotes.Providers.Discord.ComandHandlers
             foreach (var group in groups)
             {
                 var groupName = group.Count() > 1
-                    ? PretifyName(group.Key)
-                    : "Outros";
+                    ? group.Key
+                    : "outros";
 
                 if (!result.ContainsKey(groupName))
                 {
