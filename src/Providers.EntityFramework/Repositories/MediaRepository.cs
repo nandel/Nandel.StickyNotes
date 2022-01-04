@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Nandel.StikyNotes.Core.Entities;
+using Nandel.StikyNotes.Core.Helpers;
 using Nandel.StikyNotes.Core.Repositories;
 using Nandel.StikyNotes.Core.Services;
 using Nandel.StikyNotes.Provider.EntityFramework.Context;
@@ -54,6 +55,19 @@ namespace Nandel.StikyNotes.Provider.EntityFramework.Repositories
                 // TODO: Mover o salvar do dbcontext para o conceito de uow
                 await _db.SaveChangesAsync();
             }
+        }
+
+        public async Task RenameAsync(string key, string newKey)
+        {
+            var current = await GetAsync(key);
+            
+            var replacement = current.Clone();
+            replacement.Key = newKey;
+
+            Collection.Remove(current);
+            await Collection.AddAsync(replacement);
+
+            await _db.SaveChangesAsync();
         }
     }
 }

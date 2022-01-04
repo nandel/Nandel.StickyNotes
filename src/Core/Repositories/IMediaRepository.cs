@@ -11,5 +11,6 @@ namespace Nandel.StikyNotes.Core.Repositories
         Task<IEnumerable<Media>> GetAllAsync();
         Task AddAsync(Media instance);
         Task RemoveAsync(string key);
+        Task RenameAsync(string key, string newKey);
     }
 }
