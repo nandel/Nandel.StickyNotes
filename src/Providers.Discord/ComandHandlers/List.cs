@@ -71,13 +71,7 @@ namespace Nandel.StikyNotes.Providers.Discord.ComandHandlers
             
             foreach (var media in group)
             {
-                var icon = media switch
-                {
-                    HttpGet => ":globe_with_meridians:",
-                    _ => ":pencil:"
-                };
-                    
-                stringBuilder.AppendLine($"{icon} !{media.Key}");
+                stringBuilder.AppendLine($"!{media.Key}");
             }
         }
 
